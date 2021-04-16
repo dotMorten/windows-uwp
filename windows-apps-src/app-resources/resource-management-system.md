@@ -40,7 +40,7 @@ Here's an example.
 ```csharp
 // using Windows.ApplicationModel.Resources.Core;
 ResourceMap resourceMap =  ResourceManager.Current.MainResourceMap.GetSubtree("Resources");
-ResourceContext resourceContext = ResourceContext.GetForCurrentView()
+ResourceContext resourceContext = ResourceContext.GetForCurrentView();
 var str = resourceMap.GetValue("String1", resourceContext).ValueAsString;
 ```
 
